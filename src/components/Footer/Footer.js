@@ -25,15 +25,6 @@ const Footer = () => {
             Making things better
           </Slogan>
         </CompanyContainer>
-        <SocialIcons href='https://google.com'>
-        <AiFillGithub size='3rem'/>
-      </SocialIcons>
-      <SocialIcons href='https://google.com'>
-        <AiFillLinkedin size='3rem'/>
-      </SocialIcons>
-      <SocialIcons href='https://google.com'>
-        <AiFillInstagram size='3rem'/>
-      </SocialIcons>
       </SocialIconsContainer>
     </FooterWrapper>
     

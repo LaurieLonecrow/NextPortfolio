@@ -1,44 +1,37 @@
 import Link from 'next/link';
 import React from 'react';
-import { AiFillGithub, AiFillInstagram, AiFillLinkedin } from 'react-icons/ai';
-import { DiCssdeck } from 'react-icons/di';
+import { GiBoomerangSun, GiAbstract014, GiAbstract015, GiAbstract032, GiAbstract041, GiAbstract077 } from 'react-icons/gi';
 
-import { Container, Div1, Div2, Div3, NavLink, SocialIcons, Span } from './HeaderStyles';
+
+import { Container, Logo, Div2, Div3, NavLink, SocialIcons, Span } from './HeaderStyles';
 
 const Header = () =>  (
   <Container>
-    <Div1>
+    <Logo>
       <Link href="/" passHref>
         <a style={{display: 'flex', alignItems:'center', color: 'white', marginBottom:'20px'}}>
-          <DiCssdeck size='3rem'/> <Span>Portfolio</Span>
+          {/* <GiBoomerangSun size='3rem'/> <Span>LoneCrow Portfolio</Span> */}
         </a>
       </Link>
-    </Div1>
-    <Div2>
-      <li>
-        <Link href='#projects' passHref>
-          <NavLink>Projects</NavLink>
-        </Link>
-      </li>
-      <li>
-        <Link href='#tech' passHref>
-          <NavLink>Technologies</NavLink>
-        </Link>
-      </li><li>
-        <Link href='#about' passHref>
-          <NavLink>About</NavLink>
-        </Link>
-      </li>
-    </Div2>
+    </Logo>
     <Div3>
-      <SocialIcons href='https://google.com'>
-        <AiFillGithub size='3rem'/>
+    <SocialIcons href='https://google.com'>
+        <GiBoomerangSun size='3rem'/>
       </SocialIcons>
       <SocialIcons href='https://google.com'>
-        <AiFillLinkedin size='3rem'/>
+        <GiAbstract014 size='3rem'/>
       </SocialIcons>
       <SocialIcons href='https://google.com'>
-        <AiFillInstagram size='3rem'/>
+        <GiAbstract015 size='3rem'/>
+      </SocialIcons>
+      <SocialIcons href='https://google.com'>
+        <GiAbstract032 size='3rem'/>
+      </SocialIcons>
+      <SocialIcons href='https://google.com'>
+        <GiAbstract041 size='3rem'/>
+      </SocialIcons>
+      <SocialIcons href='https://google.com'>
+        <GiAbstract077 size='3rem'/>
       </SocialIcons>
     </Div3>
   </Container>

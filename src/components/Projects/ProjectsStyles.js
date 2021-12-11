@@ -23,7 +23,8 @@ row-gap: 3rem;
 
 `
 export const BlogCard = styled.div`
-  border-radius: 10px;
+  background: ${props => props.theme.colors.background2}; 
+  border-radius: 20px;
   box-shadow: 3px 3px 20px rgba(80, 78, 78, 0.5);
   text-align: center;
   width: 400px;
@@ -89,14 +90,14 @@ export const UtilityList = styled.ul`
 `;
 
 export const ExternalLinks = styled.a`
-color:#d4c0c0;
+color: #264653;
 font-size: 1.6rem;
 padding:1rem 1.5rem;
-background: #6b3030;
+background: #E9C46A;
 border-radius: 15px;
 transition: 0.5s;
 &:hover{
-  background: #801414;
+  background: #f46737;
 
 }
 `;
