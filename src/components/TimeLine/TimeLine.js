@@ -59,7 +59,7 @@ const Timeline = () => {
             <CarouselItemTitle>{item.year}</CarouselItemTitle>
             <CarouselItemText>{item.text}</CarouselItemText>
           </CarouselItem>
-        </CarouselMobileScrollNode>  
+        </CarouselMobileScrollNode> 
         ))}
       </>
       </CarouselContainer>

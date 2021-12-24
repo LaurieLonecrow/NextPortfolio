@@ -77,8 +77,11 @@ export const SectionText = styled.p`
 `
 
 export const SectionDivider = styled.div`
+  transform: translate3d(100px, 0, 0);
+  transition: 0.3s;
+  transition-timing-function: ease-in;
 
-  width: 64px;
+  width: 100px;
   height: 6px;
   border-radius: 10px;
   background-color: #fff;
@@ -86,7 +89,7 @@ export const SectionDivider = styled.div`
     'linear-gradient(270deg, #F46737 0%, #945DD6 100%)' :
     'linear-gradient(270deg, #13ADC7 0%, #945DD6 100%)'};
 
-    margin: ${(props) => props.divider ? "4rem 0" : "" };
+  margin: ${(props) => props.divider ? "4rem 0" : "" };
 
   @media ${(props) => props.theme.breakpoints.md} {
     width: 48px;
@@ -221,6 +224,7 @@ export const ButtonFront = styled.button`
 
   &:hover {
     opacity: 0;
+  
   }
   &:focus {
     outline: none;

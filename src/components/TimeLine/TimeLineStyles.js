@@ -42,7 +42,7 @@ export const CarouselMobileScrollNode = styled.div`
 export const CarouselItem = styled.div`
   background: #0F1624;
   border-radius: 3px;
-  max-width: 196px;
+  max-width: 400px;
 
   @media ${props => props.theme.breakpoints.md} {
     max-width: 124px;

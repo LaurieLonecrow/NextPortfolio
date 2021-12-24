@@ -8,35 +8,38 @@ export const Img = styled.img`
 `
 
 export const GridContainer = styled.section`
-display: grid;
-grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-padding: 3rem;
+display: flex;
+flex-direction: column;
 place-items: center;
 column-gap: 2rem;
 row-gap: 3rem;
 @media ${(props) => props.theme.breakpoints.sm} {
   display: flex;
-  flex-direction: column;
-  padding: 2rem;
+  // padding: 2rem;
   padding-bottom: 0;
 }
-
 `
 export const BlogCard = styled.div`
   background: ${props => props.theme.colors.background2}; 
   border-radius: 20px;
   box-shadow: 3px 3px 20px rgba(80, 78, 78, 0.5);
   text-align: center;
-  width: 400px;
+  width: 100%;
+
+  &:hover {
+    background: linear-gradient(121.57deg, #FFFFFF 18.77%, rgba(255, 255, 255, 0.66) 60.15%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  }
+
   @media ${(props) => props.theme.breakpoints.sm} {
-    width: 100%;
   }
 `;
+
 export const TitleContent = styled.div`
   text-align: center;
   z-index: 20;
   width: 100%;
-
 `;
 
 
@@ -79,7 +82,6 @@ export const CardInfo = styled.p`
   
 }
 `;
-
 
 export const UtilityList = styled.ul`
   list-style-type: none;

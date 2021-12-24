@@ -1,22 +1,18 @@
 import React from 'react';
 
-import { Section, SectionText, SectionTitle } from '../../styles/GlobalComponents';
-import Button from '../../styles/GlobalComponents/Button';
-import { LeftSection } from './HeroStyles';
+import { Section, SectionTitle } from '../../styles/GlobalComponents';
+import { LeftSection, Image } from './HeroStyles';
 
 const Hero = () => (
   <Section row nopadding>
+    <Image alt="selfie"/>
     <LeftSection>
-      <SectionTitle main center>
-        Welcome to <br />
-        Laurie Lonecrow
+      <SectionTitle >My name is Laurie Lonecrow.</SectionTitle>
+      <SectionTitle >
+      I am a software engineer and web designer 
+      helping startups and small businesses build an authentic 
+      web presence.
       </SectionTitle>
-      <SectionText>
-        This is going to be fun!
-      </SectionText>
-      <Button onClick={() => window.location = '/'}>
-        Click Me
-      </Button>
     </LeftSection>
 
   </Section>
