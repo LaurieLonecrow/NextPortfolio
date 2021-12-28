@@ -10,7 +10,7 @@ export default {
     background1: "rgb(0,0,0)",
     accent1: "hsl(34.9,98.6%,72.9%)",
     button: "hsl(205.1,100%,36.1%)",
-    background2: "rgb(42, 157, 143)",
+    background2: "rgb(02, 47, 103)",
   },
   // Breakpoints for responsive design
   breakpoints: {

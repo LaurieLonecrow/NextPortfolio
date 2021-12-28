@@ -5,12 +5,28 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   padding: 2rem 2rem 2rem 1rem;
+  
+  @media ${(props) => props.theme.breakpoints.md} {
+    background: rgb(0,0,0);
+    bottom: 0px;
+    padding: 0;
+    width: 100%;
+    z-index: 21;
+    -webkit-backface-visibility: hidden;
+  }
+  @media ${(props) => props.theme.breakpoints.sm} {
+  }
 `;
 
 export const Div1 = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  @media ${(props) => props.theme.breakpoints.md} {
+    flex-direction: row;
+    width: 100%;
+  
+  }
 `;
 
 // Social Icons 

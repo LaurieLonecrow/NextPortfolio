@@ -1,10 +1,16 @@
 import styled from 'styled-components';
 
 export const Img = styled.img`
-  width:100%;
-  height:100%;
+  width:50%;
+  height:50%;
+  filter: grayScale(100%);
   object-fit: cover;
   overflow: hidden;
+
+  &:hover {
+    filter: grayScale(0%);
+
+  }
 `
 
 export const GridContainer = styled.section`
@@ -15,29 +21,29 @@ column-gap: 2rem;
 row-gap: 3rem;
 @media ${(props) => props.theme.breakpoints.sm} {
   display: flex;
-  // padding: 2rem;
-  padding-bottom: 0;
+  width: 100%;
+
 }
 `
 export const BlogCard = styled.div`
-  background: ${props => props.theme.colors.background2}; 
-  border-radius: 20px;
-  box-shadow: 3px 3px 20px rgba(80, 78, 78, 0.5);
+  background: transparent; 
   text-align: center;
   width: 100%;
+  position: relative;
 
   &:hover {
-    background: linear-gradient(121.57deg, #FFFFFF 18.77%, rgba(255, 255, 255, 0.66) 60.15%);
+  background: linear-gradient(121.57deg, #FFFFFF 18.77%, rgba(255, 255, 255, 0.66) 60.15%);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
   }
 
   @media ${(props) => props.theme.breakpoints.sm} {
+    width: 100%;
   }
 `;
 
 export const TitleContent = styled.div`
-  text-align: center;
+  text-align: left;
+  // position: absolute;
   z-index: 20;
   width: 100%;
 `;
@@ -48,7 +54,7 @@ export const HeaderThree = styled.h3`
   letter-spacing: 2px;
   color: #9cc9e3;
   padding: .5rem 0;
-  font-size: ${(props) => props.title ? '3rem' : '2rem'};
+  font-size: ${(props) => props.maintitle ? '3rem' : '2rem'};
 `;
 
 export const Hr = styled.hr`
@@ -103,13 +109,3 @@ transition: 0.5s;
 
 }
 `;
-
-export const TagList = styled.ul`
-display: flex;
-justify-content: space-around;
-padding: 2rem;
-`
-export const Tag = styled.li`
-color: #d8bfbf;
-font-size: 1.5rem;
-`

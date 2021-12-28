@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import React from 'react';
 import { GiBoomerangSun, GiAbstract014, GiAbstract015, GiAbstract032, GiAbstract041, GiAbstract077 } from 'react-icons/gi';
 import { Container, Div1, SocialIcons} from './HeaderStyles';
