@@ -2,6 +2,7 @@ import React, { useState, useRef, useEffect } from 'react';
 
 import { CarouselButton, CarouselButtonDot, CarouselButtons, CarouselContainer, CarouselItem, CarouselItemImg, CarouselItemText, CarouselItemTitle, CarouselMobileScrollNode } from './TimeLineStyles';
 import { Section, SectionDivider, SectionText, SectionTitle } from '../../styles/GlobalComponents';
+
 import { TimeLineData } from '../../constants/constants';
 
 const TOTAL_CAROUSEL_COUNT = TimeLineData.length;
@@ -12,7 +13,7 @@ const Timeline = () => {
 
   const scroll = (node, left) => {
     return node.scrollTo({ left, behavior: 'smooth' });
-  }
+  };
 
   const handleClick = (e, i) => {
     e.preventDefault();
@@ -43,9 +44,9 @@ const Timeline = () => {
   }, []);
 
   return (
-    <Section id='about'>
-      <SectionTitle>Timeline</SectionTitle>
-      <SectionText>Tis the season to make new new</SectionText>
+    <Section id='timeline'>
+      <SectionDivider />
+      <SectionTitle main>Timeline</SectionTitle>
       <CarouselContainer ref={carouselRef} onScroll={handleScroll}>
         <>
         {TimeLineData.map((item, index) => (
@@ -77,7 +78,6 @@ const Timeline = () => {
         ))}
 
       </CarouselButtons>
-      <SectionDivider />
     </Section>
   );
 };

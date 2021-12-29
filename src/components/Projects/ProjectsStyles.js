@@ -1,50 +1,67 @@
 import styled from 'styled-components';
 
 export const Img = styled.img`
-  width:50%;
-  height:50%;
+  width: 60%;
   filter: grayScale(100%);
   object-fit: cover;
   overflow: hidden;
 
   &:hover {
     filter: grayScale(0%);
-
+  }
+  @media ${(props) => props.theme.breakpoints.sm} {
+    display: flex;
+    width: 80%;
   }
 `
 
 export const GridContainer = styled.section`
 display: flex;
 flex-direction: column;
-place-items: center;
-column-gap: 2rem;
+justify-content: center;
 row-gap: 3rem;
 @media ${(props) => props.theme.breakpoints.sm} {
   display: flex;
   width: 100%;
-
 }
 `
 export const BlogCard = styled.div`
-  background: transparent; 
+  filter: grayScale(100%);
   text-align: center;
+  padding: 2rem;
   width: 100%;
   position: relative;
-
+  overflow: hidden;
+  transition: 0.3s ease;
   &:hover {
-  background: linear-gradient(121.57deg, #FFFFFF 18.77%, rgba(255, 255, 255, 0.66) 60.15%);
-  -webkit-background-clip: text;
+    filter: grayScale(0%);  
+    transform: scale(1.02);
+
   }
 
   @media ${(props) => props.theme.breakpoints.sm} {
+    background-size: 100%;
+  }
+
+  &:before {
+    content: "";
+    position: absolute;
     width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background: url(${(props) => props.background}) no-repeat center center; 
+    background-size: cover;
+    opacity: .5;
   }
 `;
 
 export const TitleContent = styled.div`
-  text-align: left;
-  // position: absolute;
-  z-index: 20;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  z-index: 2;
   width: 100%;
 `;
 
@@ -60,32 +77,30 @@ export const HeaderThree = styled.h3`
 export const Hr = styled.hr`
   width: 50px;
   height: 3px;
-  margin: 20px auto;
+  margin: 20px 0;
   border: 0;
   background: #d0bb57;
 `;
 
-export const Intro = styled.div`
-  width: 170px;
-  margin: 0 auto;
-  color: #dce3e7;
-  font-family: 'Droid Serif', serif;
-  font-size: 13px;
-  font-style: italic;
-  line-height: 18px;
-`;
+// export const Intro = styled.div`
+//   width: 170px;
+//   margin: 0 auto;
+//   color: #dce3e7;
+//   font-family: 'Droid Serif', serif;
+//   font-size: 13px;
+//   font-style: italic;
+//   line-height: 18px;
+// `;
 
 
-export const CardInfo = styled.p`
-  width: 100%;
+export const SubTitle = styled.p`
   padding: 0 50px;
   color: #e4e6e7;
-  font-style: 2rem;
+  font-size: 1.5rem;
+  text-transform: uppercase;
   line-height: 24px;
-  text-align: justify;
   @media ${(props) => props.theme.breakpoints.sm} {
-    padding:.3rem
-  
+    padding: .3rem;
 }
 `;
 
@@ -98,14 +113,16 @@ export const UtilityList = styled.ul`
 `;
 
 export const ExternalLinks = styled.a`
-color: #264653;
-font-size: 1.6rem;
-padding:1rem 1.5rem;
-background: #E9C46A;
-border-radius: 15px;
+border: 2px solid #E9C46A;
+color: white;
+font-size: 2rem;
+padding: 1.2rem 1.5rem;
+background: transparent;
+border-radius: 50%;
 transition: 0.5s;
-&:hover{
-  background: #f46737;
-
+&:hover {
+  background-color: #212d45;
+  transform: scale(1.2);
+  cursor: pointer;
 }
 `;

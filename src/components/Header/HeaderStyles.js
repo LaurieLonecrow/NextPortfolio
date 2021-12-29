@@ -41,3 +41,15 @@ border-radius: 50px;
     cursor: pointer;
   }
 `
+
+export const ToolTip = styled.span`
+position: absolute;
+color: #212d45;
+width: 100%;
+padding: 24px 16px;
+margin: 8px;
+border-radius: 50%;
+background-color: white;
+width: min-content;
+visibility: hidden;
+`

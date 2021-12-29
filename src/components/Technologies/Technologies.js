@@ -1,23 +1,20 @@
 import React from 'react';
 import { DiFirebase, DiReact, DiZend } from 'react-icons/di';
-import { Section, SectionDivider, SectionText, SectionTitle } from '../../styles/GlobalComponents';
+import { Section, SectionDivider, SectionTitle } from '../../styles/GlobalComponents';
 import { List, ListContainer, ListItem, ListParagraph, ListTitle } from './TechnologiesStyles';
 
 const Technologies = () =>  (
   <Section id='tech'>
     <SectionDivider />
     <SectionTitle main>Technologies</SectionTitle>
-    <SectionText>
-      {`I'm a badass at all Frontend technologies!`}
-    </SectionText>
   <List>
     <ListItem>
       <DiReact size='3rem' />
       <ListContainer>
         <ListTitle>Front-End</ListTitle>
         <ListParagraph>
-          Experience with <br />
-          React.js
+          Proficient with <br />
+          HTML, CSS, Javascript, React.js, TypeScript
         </ListParagraph>
       </ListContainer>
     </ListItem>
@@ -28,7 +25,7 @@ const Technologies = () =>  (
         <ListTitle>Back-End</ListTitle>
         <ListParagraph>
           Experience with <br />
-          Node.js and Databases
+          Node.js, GraphQL, Postgres, MongoDB
         </ListParagraph>
       </ListContainer>
     </ListItem>
@@ -39,7 +36,7 @@ const Technologies = () =>  (
         <ListTitle>Ui/UX</ListTitle>
         <ListParagraph>
           Experience with <br />
-          tools like Figma
+          tools like Figma, Sketch, Photoshop
         </ListParagraph>
       </ListContainer>
     </ListItem>
