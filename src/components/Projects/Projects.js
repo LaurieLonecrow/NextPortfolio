@@ -10,7 +10,7 @@ return (
     <SectionTitle main>Featured Projects</SectionTitle>
     <GridContainer >
       {projects.map(({id, image, title, description, visit}) => (
-        <BlogCard key={id} background={image}> 
+        <BlogCard key={id} background={image} href={visit}> 
          <TitleContent>
           <SubTitle>{description}</SubTitle>
           <HeaderThree maintitle>{title}</HeaderThree>

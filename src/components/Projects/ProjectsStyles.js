@@ -25,7 +25,7 @@ row-gap: 3rem;
   width: 100%;
 }
 `
-export const BlogCard = styled.div`
+export const BlogCard = styled.a`
   filter: grayScale(100%);
   text-align: center;
   padding: 2rem;
