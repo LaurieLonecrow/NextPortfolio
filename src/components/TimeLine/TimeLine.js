@@ -2,8 +2,8 @@ import React, { useState, useRef, useEffect } from 'react';
 
 import { CarouselButton, CarouselButtonDot, CarouselButtons, CarouselContainer, CarouselItem, CarouselItemImg, CarouselItemText, CarouselItemTitle, CarouselMobileScrollNode } from './TimeLineStyles';
 import { Section, SectionDivider, SectionText, SectionTitle } from '../../styles/GlobalComponents';
-
 import { TimeLineData } from '../../constants/constants';
+import ScrollSlideUp from '../Transitions/SlideUp/SlideUpContainer';
 
 const TOTAL_CAROUSEL_COUNT = TimeLineData.length;
 
@@ -46,7 +46,9 @@ const Timeline = () => {
   return (
     <Section id='timeline'>
       <SectionDivider />
-      <SectionTitle main>Timeline</SectionTitle>
+      <ScrollSlideUp>
+        <SectionTitle main>Timeline</SectionTitle>
+      </ScrollSlideUp>
       <CarouselContainer ref={carouselRef} onScroll={handleScroll}>
         <>
         {TimeLineData.map((item, index) => (

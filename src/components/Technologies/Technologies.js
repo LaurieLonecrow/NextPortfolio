@@ -2,11 +2,16 @@ import React from 'react';
 import { DiFirebase, DiReact, DiZend } from 'react-icons/di';
 import { Section, SectionDivider, SectionTitle } from '../../styles/GlobalComponents';
 import { List, ListContainer, ListItem, ListParagraph, ListTitle } from './TechnologiesStyles';
+import ScrollSlideUp from '../Transitions/SlideUp/SlideUpContainer';
 
 const Technologies = () =>  (
   <Section id='tech'>
     <SectionDivider />
-    <SectionTitle main>Technologies</SectionTitle>
+    <ScrollSlideUp>
+      <SectionTitle main>Technologies</SectionTitle>
+    </ScrollSlideUp>
+
+  <ScrollSlideUp>  
   <List>
     <ListItem>
       <DiReact size='3rem' />
@@ -18,7 +23,6 @@ const Technologies = () =>  (
         </ListParagraph>
       </ListContainer>
     </ListItem>
-
     <ListItem>
       <DiFirebase size='3rem' />
       <ListContainer>
@@ -29,7 +33,6 @@ const Technologies = () =>  (
         </ListParagraph>
       </ListContainer>
     </ListItem>
-
     <ListItem>
       <DiZend size='3rem' />
       <ListContainer>
@@ -41,6 +44,8 @@ const Technologies = () =>  (
       </ListContainer>
     </ListItem>
   </List>
+  </ScrollSlideUp>
+
   </Section>
 );
 

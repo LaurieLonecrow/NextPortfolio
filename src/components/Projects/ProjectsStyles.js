@@ -120,6 +120,7 @@ padding: 1.2rem 1.5rem;
 background: transparent;
 border-radius: 50%;
 transition: 0.5s;
+z-index:2;
 &:hover {
   background-color: #212d45;
   transform: scale(1.2);
