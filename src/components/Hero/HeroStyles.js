@@ -11,6 +11,12 @@ filter: grayscale(100%);
 margin-top: auto;
 margin-bottom: auto;
 
+&:hover {
+  filter: grayScale(0%);  
+  transform: scale(1.02);
+
+}
+
 @media ${(props) => props.theme.breakpoints.sm} {
   margin: auto;
 

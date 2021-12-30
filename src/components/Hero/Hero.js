@@ -9,7 +9,7 @@ const Hero = () => (
     <LeftSection>
       <SectionTitle >My name is Laurie Lonecrow.</SectionTitle>
       <SectionTitle >
-      I am a software engineer and web designer 
+      I am a software engineer and web developer 
       helping startups and small businesses build an authentic 
       web presence.
       </SectionTitle>

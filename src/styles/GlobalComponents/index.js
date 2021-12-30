@@ -35,6 +35,15 @@ export const SectionTitle = styled.h2`
   margin-bottom: 16px;
   padding: ${(props) => props.main ? '58px 4px 16px' : '0'};
 
+  &:hover {
+  color: transparent;
+  background: transparent;
+  -webkit-text-stroke-color: #FFFFFF;
+  -webkit-text-stroke-width: 1px;
+  transition: color .4s ease,-webkit-text-stroke-color .4s ease;
+  white-space: normal;
+  }
+
   @media ${props => props.theme.breakpoints.md}{
     font-size: ${(props) => props.main ? '56px' : '48px'};
     line-height: ${(props) => props.main ? '56px' : '48px'};

@@ -1,7 +1,7 @@
 export const projects = [
   {
     title: 'Elysia-Honey',
-    description: "A Single Page, to rule them all",
+    description: "A Single Page App, to rule them all",
     image: 'https://res.cloudinary.com/lonecrow/image/upload/v1638658368/IMG_0017_uxlhkn.jpg',
     visit: 'https://elysia-honey.vercel.app/',
     source: 'https://github.com/LaurieLonecrow/Elysia-Honey',
