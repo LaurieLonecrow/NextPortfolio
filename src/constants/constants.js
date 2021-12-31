@@ -2,7 +2,7 @@ export const projects = [
   {
     title: 'Elysia-Honey',
     description: "A Single Page App, to rule them all",
-    image: 'https://res.cloudinary.com/lonecrow/image/upload/v1638658368/IMG_0017_uxlhkn.jpg',
+    image: 'https://res.cloudinary.com/lonecrow/image/upload/v1637944669/Elysia-Honey/IMG_0051_blstyj.jpg',
     visit: 'https://elysia-honey.vercel.app/',
     source: 'https://github.com/LaurieLonecrow/Elysia-Honey',
     id: 1,
@@ -10,7 +10,7 @@ export const projects = [
   {
     title: 'Mixed Tape',
     description: "Feel the MERN",
-    image: 'https://res.cloudinary.com/lonecrow/image/upload/v1636917959/stage_dyjbzz.jpg',
+    image: 'https://res.cloudinary.com/lonecrow/image/upload/v1636917959/Portfolio/stage_dyjbzz.jpg',
     visit: 'https://github.com/LaurieLonecrow/mixed-tape-react',
     source: 'https://github.com/LaurieLonecrow/mixed-tape-react',
     id: 2,
@@ -18,7 +18,7 @@ export const projects = [
   {
     title: 'Blk/Tri',
     description: "Shall wE-Commerce",
-    image: 'https://res.cloudinary.com/lonecrow/image/upload/v1640736051/BlkTriCode_qoeapr.png',
+    image: 'https://res.cloudinary.com/lonecrow/image/upload/v1640736051/Portfolio/BlkTriCode_qoeapr.png',
     visit: 'https://stormy-springs-10135.herokuapp.com/',
     source: 'https://github.com/LaurieLonecrow/BlkTri',
     id: 3,
@@ -26,7 +26,7 @@ export const projects = [
   {
     title: 'Blackjack',
     description: "Back to Basics",
-    image: 'https://res.cloudinary.com/lonecrow/image/upload/v1640736235/blackJackCode_rsdyqx.png',
+    image: 'https://res.cloudinary.com/lonecrow/image/upload/v1640736235/Portfolio/blackJackCode_rsdyqx.png',
     visit: 'https://laurielonecrow.github.io/Blackjack/',
     source: 'https://github.com/LaurieLonecrow/Blackjack',
     id: 4,

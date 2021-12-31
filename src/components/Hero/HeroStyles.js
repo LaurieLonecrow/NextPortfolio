@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Image = styled.div`
-background-image: url("https://res.cloudinary.com/lonecrow/image/upload/v1637076089/IMG_4658_woecm2.jpg");
+background-image: url("https://res.cloudinary.com/lonecrow/image/upload/v1637076089/Portfolio/IMG_4658_woecm2.jpg");
 background-size: cover;
 background-repeat: no-repeat;
 border-radius: 50%;
