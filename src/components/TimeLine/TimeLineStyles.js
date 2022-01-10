@@ -40,9 +40,11 @@ export const CarouselMobileScrollNode = styled.div`
 `
 
 export const CarouselItem = styled.div`
-  background: #0F1624;
+  background: ${props => props.theme.colors.background2};
   border-radius: 3px;
   max-width: 400px;
+  max-height: fit-content;
+  padding: 2rem;
 
   @media ${props => props.theme.breakpoints.md} {
     max-width: 124px;
@@ -51,8 +53,8 @@ export const CarouselItem = styled.div`
   @media ${props => props.theme.breakpoints.sm} {
     margin-left: 32px;
     min-width: 120px;
-    background: #0E131F;
-    padding: 4px;
+    // background: #0E131F;
+    // padding: 4px;
     align-content: start;
     scroll-snap-align: start;
     border-radius: 3px;
@@ -70,8 +72,7 @@ export const CarouselItemTitle = styled.h4`
   line-height: 32px;
   letter-spacing: 0.02em;
   display: flex;
-  /* This gradient is different due to the size of the Title container, it must transition sooner to be visible on the text */
-  background: linear-gradient(121.57deg, #FFFFFF 10%, rgba(255, 255, 255, 0.66) 30.15%);
+  background: ${props => props.theme.colors.primary1};
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-bottom: 8px;
@@ -103,7 +104,7 @@ export const CarouselItemText = styled.p`
   font-size: 14px;
   line-height: 22px;
   letter-spacing: 0.02em;
-  color: rgba(255, 255, 255, 0.75);
+  color: ${props => props.theme.colors.accent1};
   padding-right: 16px;
 
   @media ${props => props.theme.breakpoints.md} {

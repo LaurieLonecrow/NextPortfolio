@@ -7,7 +7,7 @@ export const Container = styled.div`
   padding: 2rem 2rem 2rem 1rem;
   
   @media ${(props) => props.theme.breakpoints.md} {
-    background: rgb(0,0,0);
+    background: ${props => props.theme.colors.background1};
     bottom: 0px;
     padding: 0;
     width: 100%;
@@ -32,12 +32,12 @@ export const Div1 = styled.div`
 // Social Icons 
 export const SocialIcons = styled.a`
 transition: 0.3s ease;
-color: white;
+color: ${(props) => props.theme.colors.stroke};
 border-radius: 50px;
 padding: 32px 8px;
 
 &:hover {
-    background-color: #212d45;
+    background-color: ${(props) => props.theme.colors.button};
     transform: scale(1.2);
     cursor: pointer;
   }

@@ -33,6 +33,7 @@ export const BlogCard = styled.a`
   position: relative;
   overflow: hidden;
   transition: 0.3s ease;
+  background: rgb(0,0,0);
   &:hover {
     filter: grayScale(0%);  
     transform: scale(1.02);

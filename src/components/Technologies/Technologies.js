@@ -1,7 +1,7 @@
 import React from 'react';
 import { DiFirebase, DiReact, DiZend } from 'react-icons/di';
 import { Section, SectionDivider, SectionTitle } from '../../styles/GlobalComponents';
-import { List, ListContainer, ListItem, ListParagraph, ListTitle } from './TechnologiesStyles';
+import { List, ListContainer, ListIcon, ListItem, ListParagraph, ListTitle } from './TechnologiesStyles';
 import ScrollSlideUp from '../Transitions/SlideUp/SlideUpContainer';
 
 const Technologies = () =>  (
@@ -14,7 +14,7 @@ const Technologies = () =>  (
   <ScrollSlideUp>  
   <List>
     <ListItem>
-      <DiReact size='3rem' />
+      <ListIcon><DiReact size='4rem' /></ListIcon>
       <ListContainer>
         <ListTitle>Front-End</ListTitle>
         <ListParagraph>
@@ -24,7 +24,7 @@ const Technologies = () =>  (
       </ListContainer>
     </ListItem>
     <ListItem>
-      <DiFirebase size='3rem' />
+    <ListIcon><DiFirebase size='4rem' /></ListIcon>
       <ListContainer>
         <ListTitle>Back-End</ListTitle>
         <ListParagraph>
@@ -34,7 +34,7 @@ const Technologies = () =>  (
       </ListContainer>
     </ListItem>
     <ListItem>
-      <DiZend size='3rem' />
+    <ListIcon><DiZend size='4rem' /></ListIcon>
       <ListContainer>
         <ListTitle>Ui/UX</ListTitle>
         <ListParagraph>
