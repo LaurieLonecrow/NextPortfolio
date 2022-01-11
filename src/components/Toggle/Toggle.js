@@ -5,8 +5,8 @@ const Toggle = ({theme, toggleTheme}) => {
 const isDark = theme === 'dark'
     return (
         <ToggleButton onClick={toggleTheme}>
-            <GiSundial/>
-            <GiMoonOrbit/>
+            {isDark ? <GiMoonOrbit /> : <GiSundial/>} 
+
         </ToggleButton>
     )
 }
