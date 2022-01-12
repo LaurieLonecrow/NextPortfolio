@@ -9,13 +9,14 @@ function getOffset(el) {
     el = el.offsetParent;
   }
   return { top: _y, left: _x };
-}
+};
 function hasScrolledTo(el) {
   if (!el) return false;
   const top = getOffset(el).top;
   const offset = window.innerHeight;
   return top - offset <= window.pageYOffset;
-}
+};
+
 export default function useTriggerOnScroll(ref, onTrigger) {
   const [triggered, setTriggered] = useState(false);
   useEffect(() => {

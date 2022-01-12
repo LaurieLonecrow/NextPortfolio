@@ -12,7 +12,7 @@ to {
 `;
 
 const animation = props =>
-css`${slide} 2s linear;`
+css`${slide} 1s linear;`
 
 export const SlideUp = styled.div`
 animation: ${animation};

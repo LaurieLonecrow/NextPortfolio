@@ -9,12 +9,13 @@ const ScrollSlideUp = ({children}) => {
   useTriggerOnScroll(el, (triggered) => {
     setShow(triggered);
   });
-
+  const showSlideUp = () => {
+    return show ? <SlideUp>{children}</SlideUp> : <NoSlide>{children}</NoSlide>
+  }
   return (
     <div ref={el}>
-      {show ? <SlideUp>{children}</SlideUp> : <NoSlide>{children}</NoSlide>}
+      {showSlideUp()}
     </div>
   );
 };
-
 export default ScrollSlideUp;

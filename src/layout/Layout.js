@@ -8,8 +8,8 @@ export const Layout = ({children}) => {
   return (
   <>
     <Container>
-     <Header style={{flex: '1'}}/>
-     <main style={{flex: '2'}}>{children}</main> 
+     <Header />
+     <main>{children}</main> 
     </Container>
     <Footer/>
     </>

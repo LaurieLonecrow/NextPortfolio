@@ -3,10 +3,12 @@ import { GiSundial, GiMoonOrbit } from 'react-icons/gi'
 
 const Toggle = ({theme, toggleTheme}) => {
 const isDark = theme === 'dark'
+const displayDark = () => {
+    return isDark ? <GiMoonOrbit /> : <GiSundial/>
+}
     return (
         <ToggleButton onClick={toggleTheme}>
-            {isDark ? <GiMoonOrbit /> : <GiSundial/>} 
-
+            {displayDark()} 
         </ToggleButton>
     )
 }
