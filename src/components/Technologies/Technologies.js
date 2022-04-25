@@ -18,7 +18,7 @@ const Technologies = () =>  (
          <ListTitle>Front-End</ListTitle>
           <ListParagraph>
           Proficient with <br />
-          HTML, CSS, Javascript, React.js, TypeScript
+          HTML, CSS, Javascript, React.js, TypeScript, Vue.js
           </ListParagraph>
         </ListContainer>
       </ListItem>

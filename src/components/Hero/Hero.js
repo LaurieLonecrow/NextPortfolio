@@ -8,9 +8,9 @@ const Hero = () => (
     <Image alt="selfie"/>
     <LeftSection>
     <ScrollSlideUp>
-      <SectionTitle >My name is Laurie Lonecrow.</SectionTitle>
+      <SectionTitle >My name is Laurie.</SectionTitle>
       <SectionTitle>I am a software engineer at
-      <ExternalLinks href="https://us.ippon.tech/">Ippon.us</ExternalLinks>and side-hustler 
+      <ExternalLinks href="https://us.ippon.tech/"> Ippon.us </ExternalLinks>and side-hustler 
       helping small businesses build an authentic web-presence.
       </SectionTitle>
     </ScrollSlideUp>
