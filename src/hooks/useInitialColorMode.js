@@ -27,10 +27,9 @@ export const useDarkMode = () => {
   };
 
   useEffect(() => {
-    // const localTheme = getInitialColorMode()
+    // const localTheme = getInitialColorMode();
     const localTheme = window.localStorage.getItem('theme')
     localTheme && setTheme(localTheme)
   },[]);
-
   return [theme, toggleTheme]
 };

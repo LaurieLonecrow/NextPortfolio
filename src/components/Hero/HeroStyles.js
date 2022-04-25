@@ -47,3 +47,22 @@ export const LeftSection = styled.div`
     margin: 0 auto;
   }
 `;
+
+export const ExternalLinks = styled.a`
+color: white;
+  -webkit-text-stroke-color: ${(props) => props.theme.colors.stroke};
+  -webkit-text-stroke-width: 2px;
+  white-space: normal;
+font-weight: 800;
+font-size: ${(props) => props.main ? '65px' : '56px'};
+line-height: ${(props) => props.main ? '72px' : '56px'};
+padding: 1.2rem 1.5rem;
+background: transparent;
+transition: 0.5s;
+z-index:2;
+&:hover {
+  transition: color .4s ease,-webkit-text-stroke-color .4s ease;
+  transform: scale(1.2);
+  cursor: pointer;
+}
+`;

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Section, SectionTitle } from '../../styles/GlobalComponents';
-import { LeftSection, Image } from './HeroStyles';
+import { LeftSection, Image, ExternalLinks } from './HeroStyles';
 import ScrollSlideUp from '../Transitions/SlideUp/SlideUpContainer';
 
 const Hero = () => (
@@ -9,10 +9,9 @@ const Hero = () => (
     <LeftSection>
     <ScrollSlideUp>
       <SectionTitle >My name is Laurie Lonecrow.</SectionTitle>
-      <SectionTitle >
-      I am a software engineer and web developer 
-      helping startups and small businesses build an authentic 
-      web presence.
+      <SectionTitle>I am a software engineer at
+      <ExternalLinks href="https://us.ippon.tech/">Ippon.us</ExternalLinks>and side-hustler 
+      helping small businesses build an authentic web-presence.
       </SectionTitle>
     </ScrollSlideUp>
     </LeftSection>
